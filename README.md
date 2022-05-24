@@ -1,6 +1,13 @@
-## Containerized Django application for gpt2-medium model for Text Generation from the Hugging Face library.
+## Containerized Django Application for ML Model Deployment
+gpt2-medium model for Text Generation from the Hugging Face library.
 
-[Blog to deploy the service on Kubernetes Cluster](https://medium.com/p/26e2b16426cd/edit)
+### Technology used
+- ML model and get the prediction code - **Hugging Face, gpt2-medium**
+- Service to expose APIs - **Django**
+- Database to store input and predictions - **Sqlite3**
+- Containerized application - **Docker**
+- Deploy the containerized application - **Kubernetes**
+  - [Blog to deploy the service on Kubernetes Cluster](https://medium.com/p/26e2b16426cd/edit)
 
 ### Directory Structure
 ```commandline
@@ -35,7 +42,7 @@
     └── Dockerfile
 ```
 
-## Project Setup
+### Project Setup
 
 - **Clone the repository:**
   - `git clone https://github.com/vedvasu/deploy-gcp-kubernetes.git`
@@ -73,7 +80,7 @@
   - Try the explorer API - http://127.0.0.1:8000/explorer/play
     - SELECT * from gpt2_GeneratedText
 
-## Test the docker application
+### Test the docker application
 - Install the docker from here and launch the docker on your local machine. 
 - Running `docker ps` would confirm the installation.  
 - From inside the `django_app` directory build the docker image 
