@@ -1,5 +1,5 @@
 ## Containerized Django Application for ML Model Deployment
-gpt2-medium model for Text Generation from the Hugging Face library.
+Deploying gpt2-medium model for Text Generation from the Hugging Face library.
 
 ### Technology used
 - ML model and get the prediction code - **Hugging Face, gpt2-medium**
@@ -73,6 +73,7 @@ gpt2-medium model for Text Generation from the Hugging Face library.
   - `python manage.py createsuperuser --noinput`
   
 
+### Test the APIs
 
 - **Test API on localhost**
   - `python manage.py runserver` 
@@ -80,12 +81,12 @@ gpt2-medium model for Text Generation from the Hugging Face library.
   - Try the explorer API - http://127.0.0.1:8000/explorer/play
     - SELECT * from gpt2_GeneratedText
 
-### Test the docker application
-- Install the docker from here and launch the docker on your local machine. 
-- Running `docker ps` would confirm the installation.  
-- From inside the `django_app` directory build the docker image 
-  - `docker build -f ../docker/Dockerfile -t django-app:latest .
-  docker ls`
-- Run application
-  - `docker run -p 8000:8000 django-app`
+- **Test the docker application**
+  - Install the docker from here and launch the docker on your local machine. 
+  - Running `docker ps` would confirm the installation.  
+  - From inside the `django_app` directory build the docker image 
+    - `docker build -f ../docker/Dockerfile -t django-app:latest .
+    - `docker images`
+  - Run application
+    - `docker run -p 8000:8000 django-app`
   - Try the model API - http://127.0.0.1:8000/generate/
