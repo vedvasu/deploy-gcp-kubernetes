@@ -85,7 +85,7 @@ Deploying gpt2-medium model for Text Generation from the Hugging Face library.
   - Install the docker from here and launch the docker on your local machine. 
   - Running `docker ps` would confirm the installation.  
   - From inside the `django_app` directory build the docker image 
-    - `docker build -f ../docker/Dockerfile -t django-app:latest .
+    - `docker build -f ../docker/Dockerfile -t django-app:latest .`
     - `docker images`
   - Run application
     - `docker run -p 8000:8000 django-app`
