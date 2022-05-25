@@ -7,9 +7,9 @@ ADD . /django_app/
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED ""
 
-ENV DJANGO_SUPERUSER_USERNAME "vedvasu"
-ENV DJANGO_SUPERUSER_PASSWORD "donotopen170122"
-ENV DJANGO_SUPERUSER_EMAIL "vedvasusharma@gmail.com"
+ENV DJANGO_SUPERUSER_USERNAME "username"
+ENV DJANGO_SUPERUSER_PASSWORD "password"
+ENV DJANGO_SUPERUSER_EMAIL "email@gmail.com"
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
