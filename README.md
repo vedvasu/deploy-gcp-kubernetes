@@ -42,7 +42,7 @@ Deploying gpt2-medium model for Text Generation from the Hugging Face library.
     └── Dockerfile
 ```
 
-### Project Setup
+### Project Setup (API Service)
 
 - **Clone the repository:**
   - `git clone https://github.com/vedvasu/deploy-gcp-kubernetes.git`
