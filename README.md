@@ -67,9 +67,9 @@ Deploying gpt2-medium model for Text Generation from the Hugging Face library.
 
 
 - **Create a django superuser for access explorer:**
-  - `export DJANGO_SUPERUSER_USERNAME "username"`
-  - `export DJANGO_SUPERUSER_PASSWORD "password"`
-  - `export DJANGO_SUPERUSER_EMAIL "email@gmail.com"`
+  - `export DJANGO_SUPERUSER_USERNAME="username"`
+  - `export DJANGO_SUPERUSER_PASSWORD="password"`
+  - `export DJANGO_SUPERUSER_EMAIL="email@gmail.com"`
   - `python manage.py createsuperuser --noinput`
   
 
